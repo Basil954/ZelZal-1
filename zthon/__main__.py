@@ -35,16 +35,16 @@ except Exception as e:
 
 
 try:
-    LOGS.info("⌭ جـار تفعيـل وضـع الانـلاين ⌭")
+    LOGS.info(" جـار تفعيـل وضـع الانـلاين ⌭")
     zedub.loop.run_until_complete(mybot())
-    LOGS.info("✓ تـم تفعيـل الانـلاين .. بـنجـاح ✓")
+    LOGS.info(" تـم تفعيـل الانـلاين .. بـنجـاح ✓")
 except Exception as e:
     LOGS.error(f"- {e}")
 
 try:
-    LOGS.info("⌭ جـاري تحميـل الملحقـات ⌭")
+    LOGS.info(" جـاري تحميـل الملحقـات ⌭")
     zedub.loop.create_task(saves())
-    LOGS.info("✓ تـم تحميـل الملحقـات .. بنجـاح ✓")
+    LOGS.info(" تـم تحميـل الملحقـات .. بنجـاح ✓")
 except Exception as e:
     LOGS.error(f"- {e}")
 
@@ -54,12 +54,12 @@ async def startup_process():
     await verifyLoggerGroup()
     await load_plugins("plugins")
     await load_plugins("assistant")
-    print("➖➖➖➖➖ 𝗭𝗧𝗵𝗼𝗻™ ➖➖➖➖➖")
+    print("➖➖➖➖➖ 𝗕𝗮𝘀𝗶𝗹 𝗩 .™ ➖➖➖➖➖")
     print("تـم التنصـيب .. بنجـاح ✓")
     print(
-        f"⌔┊تـم تنصيـب زدثــون يـوزربـوت . . بنجـاح 🧸♥️ \n\n⌔┊تحيـاتي .. زلــزال الهيبــه\n⌔┊قنـاة السـورس ↶.\n🌐┊@ZedThon "
+        f"⌔┊تـم تنصيـب باسل يـوزربـوت . . بنجـاح 🧛🏻❤️‍🔥 \n\n⌔┊تحيـاتي .. بـاسـل الهيبــه\n⌔┊قنـاة السـورس ↶.\n🌐┊@Xl441 "
     )
-    print("➖➖➖➖➖ 𝗭𝗧𝗵𝗼𝗻™ ➖➖➖➖➖")
+    print("➖➖➖➖➖ 𝗕𝗮𝘀𝗶𝗹 𝗩 .™ ➖➖➖➖➖")
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
     if PM_LOGGER_GROUP_ID != -100:
